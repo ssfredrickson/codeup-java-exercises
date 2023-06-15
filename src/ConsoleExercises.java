@@ -1,6 +1,7 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
+
 public class ConsoleExercises {
 
     public static void main(String[] args){
