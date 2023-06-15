@@ -24,6 +24,7 @@ public class ControlFlowExercises {
 
 //        ----------------------------
 
+
 //        for (long sqr = 2; sqr < 1000000;  sqr = sqr * sqr) {
 //            System.out.println(sqr);
 //        }
@@ -56,6 +57,10 @@ public class ControlFlowExercises {
             System.out.println(i + "      | " + i * i + "       |    " + i * i * i);
         }
 
+
+//        -------------------------------------
+        
+
         System.out.println("Please enter your grade: ");
         int grade = scanner.nextInt();
 
@@ -68,7 +73,6 @@ public class ControlFlowExercises {
         } else if (grade < 67 && grade >= 60) {
             System.out.println(grade + " = D - Do Much Better");
         } else System.out.println(grade + " = F - Retake Scheduled");
-
 
 
     }
