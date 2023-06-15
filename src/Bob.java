@@ -13,10 +13,13 @@ public class Bob {
 
             if (toBob.endsWith("?")) {
                 System.out.println(bobSure);
+
             } else if (toBob.endsWith("!")){
                 System.out.println(bobChillOut);
+
             }else if (toBob.trim().isEmpty()){
                 System.out.println(bobFine);
+
             }else System.out.println(bobWhatever);
 
     }
