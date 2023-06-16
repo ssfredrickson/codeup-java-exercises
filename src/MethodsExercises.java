@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
     public static int addition(int x, int y) {
         return x + y;
@@ -25,7 +27,26 @@ public class MethodsExercises {
         return x % y;
     };
 
+
+
+    public static int getInteger(int min, int max) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number between " + min + " and " + max + ":");
+        int userInput = Integer.parseInt(scanner.nextLine());
+        System.out.println("You entered:" + userInput);
+        if (userInput >= min && userInput <= max){
+             System.out.println("Thank you!");
+             return userInput;
+        }System.out.println("Please enter a valid number");
+        ;
+        return getInteger(min, max);
+
+    };
+
     public static void main(String[] args) {
-        System.out.println(theLongWay(12, 12));
+    getInteger(1, 100);
+
+
+
     }
 }
