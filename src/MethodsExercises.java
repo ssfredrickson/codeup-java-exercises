@@ -3,6 +3,8 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class MethodsExercises {
+
+    Scanner scanner = new Scanner(System.in);
     public static int addition(int x, int y) {
         return x + y;
     };
@@ -63,8 +65,21 @@ public class MethodsExercises {
 
     };
 
+    public static void dice() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What sided dice are you rolling?");
+        int min = 1;
+        int sides = Integer.parseInt(scanner.nextLine());
+        int diceOne = (int) (Math.random() * sides + min);
+        int diceTwo = (int) (Math.random() * sides + min);
+        System.out.println("Your first die rolled a: " + diceOne);
+        System.out.println("Your Second die rolled a: " + diceTwo);
+
+    };
+
+
     public static void main(String[] args) {
-    factor(1, 10);
+    dice();
 
 
     }
