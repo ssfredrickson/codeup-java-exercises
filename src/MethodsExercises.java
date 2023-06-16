@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import java.lang.Math;
+
 public class MethodsExercises {
     public static int addition(int x, int y) {
         return x + y;
@@ -43,9 +45,26 @@ public class MethodsExercises {
 
     };
 
-    public static void main(String[] args) {
-    getInteger(1, 100);
+    public static int factor(int min, int max) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number between " + min + " and " + max + ":");
+        int userInput = Integer.parseInt(scanner.nextLine());
+        System.out.println("You entered:" + userInput);
+        if (userInput >= min && userInput <= max){
+            System.out.println("Thank you!");
+            int fact = 1;
+            for (int i = 1; i <= userInput; i++) {
+                System.out.println(i + "!" + " = " +(fact = fact * i));
+            }
+            return userInput;
+        }System.out.println("Please enter a valid number");
+        ;
+        return factor(min, max);
 
+    };
+
+    public static void main(String[] args) {
+    factor(1, 10);
 
 
     }
