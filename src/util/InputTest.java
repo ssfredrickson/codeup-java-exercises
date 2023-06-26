@@ -8,7 +8,7 @@ public class InputTest {
         System.out.println("Enter a string!");
         System.out.println(testInput.getString());
 
-        System.out.println(testInput.yesNo());
+
 
         System.out.println(testInput.getInt(5, 10));
 

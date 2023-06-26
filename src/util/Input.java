@@ -13,15 +13,6 @@ public class Input {
         return this.scanner.nextLine();
     }
 
-    public static boolean yesNo(){
-        System.out.println("Enter Yes/Y or No/N");
-        String yNStr = this.scanner.nextLine();
-        boolean yNBool = false;
-        if(yNStr.equalsIgnoreCase("yes") || yNStr.equalsIgnoreCase("y")){
-            yNBool = true;
-        }
-        return yNBool;
-    }
 
     public int getInt(int min, int max){
         int userInt = 0;
